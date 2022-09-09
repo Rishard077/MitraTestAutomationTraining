@@ -9,7 +9,7 @@ public class C_DataTypes {
     boolean male= true;
     boolean female= false;
     String firstName,lastName,address;
-    static int age;
+    int age;
     double height;
     char initial;
     boolean isSriLankan;
@@ -23,7 +23,7 @@ public class C_DataTypes {
     public int getAge(){return age;}
     public double getHeight(){return height;}
     public char getInitial(){return initial;}
-    public boolean isSriLankan(){return isSriLankan;}
+    public boolean SriLankan(){return isSriLankan;}
 
 
     public void setAge(int a){age=a;}
@@ -56,11 +56,7 @@ public class C_DataTypes {
         System.out.println("I live in "+d.getAddress());
         System.out.println("My grand father's name starts with "+d.getInitial());
         System.out.println("I am "+d.getHeight()+"CM tall");
-
-        if (d.isSriLankan==true){
-            System.out.println("Yes I am a Sri Lankan");
-        }
-        else { System.out.println("Sorry I am Not");}
+        System.out.println("are you Sri Lankan: "+d.SriLankan());
 
 
 
